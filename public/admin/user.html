@@ -76,24 +76,65 @@
       </ol>
     </div>
     <div class="text-content">
-        111
+      <table class="table table-striped table-bordered text-center">
+        <thead>
+          <tr>
+            <td width="10%">序号</td>
+            <td width="30%">用户名</td>
+            <td width="30%">手机号</td>
+            <td width="20%">状态</td>
+            <td width="10%">操作</td>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 挖个坑 -->
+        </tbody>
+      </table>
+      <div class="text-right">
+        <ul id="paginator"></ul>
+      </div>
     </div>
   </div>
   <!-- 退出的模态框 -->
   <div class="modal fade leaveModal ">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title">温馨提示</h4>
+        </div>
+        <div class="modal-body text-danger">
+
+          <p>
+            <span class="glyphicon glyphicon-info-sign"></span>您确定要退出后台管理系统吗？</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-primary btn-confirm">确认</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 启用禁用功能 -->
+  <div class="modal fade alertModal ">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
             <h4 class="modal-title">温馨提示</h4>
           </div>
           <div class="modal-body text-danger">
-            
-            <p><span class="glyphicon glyphicon-info-sign"></span>您确定要退出后台管理系统吗？</p>
+  
+            <p>
+              <span class="glyphicon glyphicon-info-sign"></span>你确定要执行此操作吗？</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-            <button type="button" class="btn btn-primary btn-confirm">确认</button>
+            <button type="button" class="btn btn-primary btn-sure">确认</button>
           </div>
         </div>
       </div>
@@ -103,7 +144,33 @@
   <script src="lib/bootstrap/js/bootstrap.js"></script>
   <script src="./lib/bootstrap-validator/js/bootstrapValidator.js"></script>
   <script src="./lib/nprogress/nprogress.js"></script>
+  <script src="./lib/bootstrap-paginator/bootstrap-paginator.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
   <script src="./js/common.js"></script>
+  <script src="./js/user.js"></script>
+  <script type="text/html" id="tpl">
+    {{each rows v i}}
+
+    <tr>
+      <td>{{(page-1)*size+i+1}}</td>
+      <td>{{v.username}}</td>
+      <td>{{v.mobile}}</td>
+      <td>{{v.isDelete==1?"正常":"禁用"}}</td>
+      <td data-id="{{v.id}}">
+        {{if v.isDelete === 1}}
+        <button class="btn btn-danger btn-sm">禁用</button>
+        {{/if}}
+        {{if v.isDelete ===0 }}
+        <button class="btn btn-success btn-sm">启用</button>
+        {{/if}}
+      </td>
+    </tr>
+    {{/each}}
+
+  </script>
+
+
+
 </body>
 
 </html>
