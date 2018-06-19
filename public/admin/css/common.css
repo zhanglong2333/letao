@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a:hover,
+a:visited,
+a:link{
+    text-decoration:none;  
+}
+.mt-150{
+  margin-top: 150px;
+}
+.lt_aside{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 180px;
+  height: 100%;
+  background-color: #222222;
+  transition: all 1s
+
+}
+.lt_aside.lf_pl{
+  left: -180px;
+  transition: all 1s
+}
+.lt_aside .lt_header{
+  height: 50px;
+  width: 100%;
+  background-color: #367fa9;
+}
+.lt_header p{
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  line-height:50px
+}
+.lt_user img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin:30px auto  0
+}
+.lt_user p{
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  margin: 20px auto;
+}
+.lt_nav li a{
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  color: #ccc;
+  padding-left: 30px;
+  cursor: pointer;
+
+}
+.lt_nav .child{
+  padding-left: 20px;
+  display: none;
+
+}
+
+/* 首页右边部分 */
+.main{
+  padding-left: 180px;
+  height: 100%;
+  width: 100%;
+  transition: all 1s;
+}
+.main.rt_pl{
+    padding-left: 0px;
+    transition: all 1s;
+}
+.rt_container{
+  padding: 0 20px
+}
+.rt_header{
+  background-color: #3c8dbc;
+  height: 50px;
+}
+.rt_header span {
+  padding: 0 20px;
+  line-height: 50px;
+  color: #FFF;
+  font-size: 18px
+}
+.breadcrumb {
+  border-radius: 5px;
+  margin: 20px auto;
+}
+.lt-icon:hover,
+.rt-icon:hover{
+  cursor: pointer;
+}
+.text-content{
+  padding: 0 40px
+
+}
