@@ -38,17 +38,13 @@
         </li>
         <li>
           <a href="javascript:;">
-            <span class="glyphicon glyphicon-list"></span>
+            <span class="glyphicon glyphicon-list "></span>
             <span>分类管理</span>
           </a>
-          <ul class="child">
-            <li>
-              <a href="first.html">一级标题</a>
-            </li>
-            <li>
-              <a href="second.html">二级标题</a>
-            </li>
-          </ul>
+          <div style="display: none;">
+            <a href="first.html">一级标题</a>
+            <a href="second.html">二级标题</a>
+          </div>
         </li>
         <li>
           <a href="product.html">
@@ -119,26 +115,26 @@
   </div>
   <!-- 启用禁用功能 -->
   <div class="modal fade alertModal ">
-      <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <h4 class="modal-title">温馨提示</h4>
-          </div>
-          <div class="modal-body text-danger">
-  
-            <p>
-              <span class="glyphicon glyphicon-info-sign"></span>你确定要执行此操作吗？</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-            <button type="button" class="btn btn-primary btn-sure">确认</button>
-          </div>
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title">温馨提示</h4>
+        </div>
+        <div class="modal-body text-danger">
+
+          <p>
+            <span class="glyphicon glyphicon-info-sign"></span>你确定要执行此操作吗？</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-primary btn-sure">确认</button>
         </div>
       </div>
     </div>
+  </div>
 
   <script src="lib/jquery/jquery.js"></script>
   <script src="lib/bootstrap/js/bootstrap.js"></script>

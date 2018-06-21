@@ -118,7 +118,7 @@ router.post("/addProductPic", function (req, res) {
             var file = files['pic' + i];
             if (!file || file.name == "") break;
             let picName = uuid.v1() + path.extname(file.name);
-            fs.rename(file.path, 'public\\upload\\product\\' + picName, function (err) {
+            fs.rename(file.path, 'public/upload/product/' + picName, function (err) {
                 if (err) res.send({"error": 403, "message": "图片保存异常！"});
                 res.send({"picName": picName, "picAddr": '/upload/product/' + picName});
 

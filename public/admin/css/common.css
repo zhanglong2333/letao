@@ -17,7 +17,7 @@ a:link{
   top: 0;
   width: 180px;
   height: 100%;
-  background-color: #222222;
+  background-color: #222d32;
   transition: all 1s
 
 }
@@ -56,12 +56,18 @@ a:link{
   color: #ccc;
   padding-left: 30px;
   cursor: pointer;
+  border-left: 3px solid transparent
 
 }
-.lt_nav .child{
+/* .lt_nav .child{
   padding-left: 20px;
   display: none;
-
+} */
+.lt_nav li a.now{
+  border-left-color: #069;
+  background-color: #1d1f21;
+  color: #fff;
+  display: block;
 }
 
 /* 首页右边部分 */

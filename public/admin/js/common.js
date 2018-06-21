@@ -21,6 +21,11 @@ if (location.href.indexOf("login.html") == -1) {
     }
   })
 }
+$(function(){
+  $(".lt_aside a").on("click",function(){
+    $(this).addClass("now"); 
+  })
+})
 $(function () {
 
   $(".child").prev().on("click", function () {

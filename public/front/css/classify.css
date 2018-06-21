@@ -1,0 +1,40 @@
+.lt-content{
+  position: relative;
+}
+.left-nav{
+  position: relative;
+  height: 100%;
+  width: 90px;
+  float: left;
+}
+.left-nav li{
+  background-color: pink;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: 1px solid red;
+  border-right: 1px solid red;
+
+}
+.left-nav li.now{
+  border-right: none;
+  background-color: #fff;
+}
+.right-nav{
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+}
+.right-nav li {
+  float: left;
+  width: 33.33%;
+}
+.right-nav li img {
+  width: 62px;
+  height: 62px;
+  margin: 0 auto;
+}
+.right-nav li p {
+  text-align: center;
+}
