@@ -21,18 +21,13 @@ if (location.href.indexOf("login.html") == -1) {
     }
   })
 }
-$(function(){
-  $(".lt_aside a").on("click",function(){
-    $(this).addClass("now"); 
+$(function () {
+  $(".child").on("click", function () {
+    $(this).next().slideToggle();
+
   })
 })
-$(function () {
 
-  $(".child").prev().on("click", function () {
-    $(this).next().slideToggle();
-  })
-
-});
 $(function () {
   $(".lt-icon").on("click", function () {
     $(".lt_aside").toggleClass("lf_pl");
