@@ -27,11 +27,13 @@ img{
   position: absolute;
   left: 0;
   top: 0;
+  z-index: 999;
 }
 .lt-content{
   height: 100%;
   width: 100%;
-  /* background-color:#ccc; */
+  background-color:#fff;
+  position: relative;
 }
 .lt-footer{
   height: 55px;
@@ -40,6 +42,8 @@ img{
   background-color: #069;
   left: 0;
   bottom: 0;
+  z-index: 999;
+
 }
 /* 头部部分 */
 .lt-header h4{
@@ -80,4 +84,25 @@ right: 0;
 .lt-footer li.now a,
 .lt-footer li.now p{
   color: darkorange;
+}
+/* 搜索框部分 */
+.lt-search {
+  padding: 10px;
+  position: relative;
+}
+
+.lt-search input{
+  width: 100%;
+  height: 35px;
+  border: 1px solid #007aff;
+  background: #fff;
+  font-size: 12px;
+  border-radius: 5px;
+}
+.lt-search button{
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  border-top-left-radius:0;
+  border-bottom-left-radius:0;
 }

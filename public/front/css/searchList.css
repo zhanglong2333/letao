@@ -1,0 +1,44 @@
+.lt-lost li{
+  width: 25%;
+  height: 30px;
+  float: left;
+  font-size: 12px;
+  background-color: #eee;
+  text-align: center;
+  line-height: 30px;
+}
+.lt-lost li a{
+  color: #666;
+
+}
+.lt-lost li.now a{
+  color: orange;
+}
+/* 商品详情部分 */
+.lt-shop{
+  padding: 10px;  
+}
+.lt-shop  a{
+  width: 48%;
+  float: left;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+.lt-shop a:nth-child(even){
+  margin-left: 4%;
+}
+.lt-shop a img{
+  /* display: block; */
+  width: 100%;
+  height: 100%;
+}
+.lt-shop a .old-price{
+  text-decoration: line-through;
+}
+.lt-shop a .price{
+  color: red
+}
+

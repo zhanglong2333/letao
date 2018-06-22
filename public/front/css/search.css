@@ -1,0 +1,26 @@
+.plr{
+  padding: 0 5px;
+}
+
+.lt-history{
+  padding: 10px;
+}
+.lt-history li {
+  height: 30px;
+  border-left: 1px dashed red;
+  border-right: 1px dashed red;
+  border-bottom: 1px dashed red;
+  padding: 0 5px;
+}
+.lt-history span{
+  line-height: 29px ;
+  color: #666666;
+  font-size: 12px;
+
+}
+.lt-history li:nth-child(1){
+  border: 1px dashed red;
+}
+.lt-history .mui-icon-closeempty{
+  font-size: 24px;
+}
